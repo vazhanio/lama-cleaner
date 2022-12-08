@@ -189,10 +189,6 @@ function ModelSettingBlock() {
         return undefined
       case AIModel.FCF:
         return renderFCFModelDesc()
-      case AIModel.SD15:
-        return undefined
-      case AIModel.SD2:
-        return undefined
       case AIModel.Mange:
         return undefined
       case AIModel.CV2:
@@ -233,18 +229,6 @@ function ModelSettingBlock() {
           'Keys to Better Image Inpainting: Structure and Texture Go Hand in Hand',
           'https://arxiv.org/abs/2208.03382',
           'https://github.com/SHI-Labs/FcF-Inpainting'
-        )
-      case AIModel.SD15:
-        return renderModelDesc(
-          'Stable Diffusion 1.5',
-          'https://ommer-lab.com/research/latent-diffusion-models/',
-          'https://github.com/CompVis/stable-diffusion'
-        )
-      case AIModel.SD2:
-        return renderModelDesc(
-          'Stable Diffusion 2',
-          'https://ommer-lab.com/research/latent-diffusion-models/',
-          'https://github.com/Stability-AI/stablediffusion'
         )
       case AIModel.Mange:
         return renderModelDesc(
