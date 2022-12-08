@@ -297,13 +297,6 @@ const defaultHDSettings: ModelsHDSettings = {
     hdStrategyCropMargin: 128,
     enabled: false,
   },
-  [AIModel.SD2]: {
-    hdStrategy: HDStrategy.ORIGINAL,
-    hdStrategyResizeLimit: 768,
-    hdStrategyCropTrigerSize: 512,
-    hdStrategyCropMargin: 128,
-    enabled: false,
-  },
   [AIModel.Mange]: {
     hdStrategy: HDStrategy.CROP,
     hdStrategyResizeLimit: 1280,
