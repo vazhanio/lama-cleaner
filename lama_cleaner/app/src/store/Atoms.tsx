@@ -7,12 +7,12 @@ export enum AIModel {
   LAMA = 'lama',
   LDM = 'ldm',
   ZITS = 'zits',
-  MAT = 'mat',
-  FCF = 'fcf',
-  SD15 = 'sd1.5',
-  SD2 = 'sd2',
-  CV2 = 'cv2',
-  Mange = 'manga',
+/**  MAT = 'mat',
+ * FCF = 'fcf',
+ * SD15 = 'sd1.5',
+ * SD2 = 'sd2',
+ * CV2 = 'cv2',
+ * Mange = 'manga',*/
 }
 
 export const maskState = atom<File | undefined>({
