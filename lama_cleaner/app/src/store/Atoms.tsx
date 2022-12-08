@@ -7,12 +7,6 @@ export enum AIModel {
   LAMA = 'lama',
   LDM = 'ldm',
   ZITS = 'zits',
-/**  MAT = 'mat',
- * FCF = 'fcf',
- * SD15 = 'sd1.5',
- * SD2 = 'sd2',
- * CV2 = 'cv2',
- * Mange = 'manga',*/
 }
 
 export const maskState = atom<File | undefined>({
@@ -237,21 +231,7 @@ export interface Settings {
   // For ZITS
   zitsWireframe: boolean
 
-  // For SD
-  sdMaskBlur: number
-  sdMode: SDMode
-  sdStrength: number
-  sdSteps: number
-  sdGuidanceScale: number
-  sdSampler: SDSampler
-  sdSeed: number
-  sdSeedFixed: boolean // true: use sdSeed, false: random generate seed on backend
-  sdNumSamples: number
-  sdMatchHistograms: boolean
 
-  // For OpenCV2
-  cv2Radius: number
-  cv2Flag: CV2Flag
 }
 
 const defaultHDSettings: ModelsHDSettings = {
@@ -286,13 +266,6 @@ const defaultHDSettings: ModelsHDSettings = {
   [AIModel.FCF]: {
     hdStrategy: HDStrategy.CROP,
     hdStrategyResizeLimit: 512,
-    hdStrategyCropTrigerSize: 512,
-    hdStrategyCropMargin: 128,
-    enabled: false,
-  },
-  [AIModel.SD15]: {
-    hdStrategy: HDStrategy.ORIGINAL,
-    hdStrategyResizeLimit: 768,
     hdStrategyCropTrigerSize: 512,
     hdStrategyCropMargin: 128,
     enabled: false,
